@@ -1,0 +1,212 @@
+/* .heading {
+    width: 100%;
+    height: 89px;
+    background: #339966;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.subheading {
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.label {
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown {
+    width: 400px;
+    height: 50px;
+    border: 3px solid #339966;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: #339966;
+    color: #FFFFFF;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
+
+.heading {
+    width: 100%;
+    height: 55px;
+    background: #339966;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    margin: 0px;
+    padding: 11px;
+}
+ 
+.subheading {
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+}
+ 
+.location_label {
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 10px;
+    line-height: 100px;
+    color: #000000;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+ 
+.meeting_label {
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 10px;
+    line-height: 10px;
+    color: #000000;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+ 
+.dropdown-container {
+    position: center;
+    display: inline-block;
+ 
+}
+ 
+.dropdown_location {
+    width: 400px;
+    height: 50px;
+    border: 3px solid #339966;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    padding: 3px 8px;
+    margin-left: 85px;
+    margin-bottom: 18px;
+   
+}
+ 
+.dropdown_meeting{
+    width: 400px;
+    height: 50px;
+    border: 3px solid #339966;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    padding: 3px 8px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+   
+}
+ 
+.dropdown-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ 
+.button_proceed {
+    width: 120px;
+    height: 40px;
+    background-color: #339966;
+    color: #FFFFFF;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding-left: center;
+    margin: auto;
+    margin-top: 120px;
+    display: block;
+ 
+}
+ 
+.button_logout {
+    width: 5px;
+    height: 10px;
+    background-color: #339956;
+    color: #FFFFFF;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-right:60px ;
+    align-content: center;
+    align-self: auto;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+ 
+ 
+}

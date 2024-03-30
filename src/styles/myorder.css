@@ -1,0 +1,105 @@
+.order-list {
+    background-color: #DCDCDC;
+    width: 25%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.order-single-box {
+    background-color: white;
+    border-radius: 6px;
+    margin: 15px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order-single-box p {
+    margin: 10px;
+}
+
+.order-single-box.selected {
+    border-left: 8px solid #339966;
+}
+.my-order-details{
+    width: 75%;
+}
+.order-place-details{
+    display: flex;
+    background-color: #F6F6F6;
+    height: 70px;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.order-place-details p{
+    margin: 0px 25px;
+}
+.diplay-item-box{
+    width: 95%;
+    background-color: #F6F6F6;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.diplay-name-myorder{
+    display: flex;
+    justify-content:space-between;
+}
+.amount-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-div{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.mag-icon-fork{
+    background-color: #339966;
+    border-radius: 100px;
+    font-size: 70px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    color: white;
+}
+.content-msg-div{
+    padding: 20px;
+    border-radius: 6px;
+}
+.content-msg-div p {
+    font-size: 20px;
+    margin: 20px;
+}
+.date-time-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-order-button{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bolder;
+    width: 130px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}

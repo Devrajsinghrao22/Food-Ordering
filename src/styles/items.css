@@ -1,0 +1,103 @@
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 70%; */
+    /* flex: 1; */
+}
+.item {
+    box-sizing: border-box;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background: #F7F7F7;
+    margin: 10px;
+    flex: 1 0 calc(25% - 20px); /* Each item takes up 25% of the container width (minus margins) */
+    /* max-width: calc(25% - 20px); */
+    flex-grow: 1; /* Allow items to grow if there's extra space */
+    transition: transform ease 0.5s;
+    /* height: fit-content; */
+}
+ 
+.item:hover {
+    transform: scale(1.05);
+}
+ 
+.item-image {
+    width: 265px;
+    height: 131px;
+    border-radius: 8px 8px 0px 0px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+.show-box{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar-left{
+    height: auto;
+}
+/* .item-image {
+    display: block;
+    margin: auto;
+    height: 131px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px 8px 0px 0px;
+    object-fit: contain;
+} */
+ 
+.price-add-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ 
+.item-name{
+    padding-left: 10px;
+}
+.add-button {
+    background: #FFFFFF;
+    border: 2px solid #339966;
+    border-radius: 10px;
+    color: #339966;
+    font-family: 'Kohinoor Devanagari';
+    font-style: normal;
+    cursor: pointer;
+    width: 85px;
+    height: 36.43px;
+}
+
+.item-page-heading{
+    margin: 25px;
+}
+
+.button-toggle-plus-minus{
+    background: #FFFFFF;
+    border: 2px solid #339966;
+    border-radius: 10px;
+    width: 85px;
+    height: 30.43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-minus{
+    height: 36.43px;
+    width: 30px;
+    border: none;
+    color: #339966;
+    font-weight: 700;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #3399662c;
+}
+.button-plus{
+    height: 36.43px;
+    width: 30px;
+    border: none;
+    color: #339966;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #3399662c;
+}
