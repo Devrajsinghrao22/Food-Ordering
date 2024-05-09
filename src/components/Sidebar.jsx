@@ -9,7 +9,7 @@ import { TbLogout2 } from "react-icons/tb";
 import { GiHotMeal } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import { FaClipboardList } from "react-icons/fa";
-
+import icon from '../images/frontend_icon.webp';
 
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +65,7 @@ const Sidebar = ({ children }) => {
 
           <cart onClick={toggle}>
             <img
-              src={securelogo}
+              src={icon}
               alt=""
               style={{ width: "46px", height: "auto" }}
             />

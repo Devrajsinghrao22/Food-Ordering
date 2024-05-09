@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "../styles/userLogin.css";
 import Logo from "../images/SecureBirdLogo.png";
 import FormHeadImg from "../images/FormHeadImg.png";
+import frontend_icon from '../images/frontend_icon.webp';
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -54,7 +56,9 @@ const Login = () => {
   return (
     <>
       <div className="user-logo">
-        <img src={Logo} alt="" />
+        {/* <img src={Logo} alt="" /> */}
+        {/* <img src={frontend_icon} alt="" /> */}
+
       </div>
       <div className="user-login-form">
         <ToastContainer />
@@ -72,6 +76,7 @@ const Login = () => {
             <input
               type="text"
               id="username"
+              style={{borderRadius: '5px'}}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -80,6 +85,7 @@ const Login = () => {
             <input
               type="password"
               id="password"
+              style={{borderRadius: '5px'}}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

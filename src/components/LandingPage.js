@@ -80,9 +80,11 @@ const LandingPage = () => {
       >
         <option value="">Select Location</option>
         {locations.map((location) => (
-          <option key={location.location_id} value={location.location_id}>
+          location.location_id !== 'SGJ' ? (
+            <option key={location.location_id} value={location.location_id}>
             {location.location_name}
           </option>
+          ) : null
         ))}
       </select>
       <br></br>

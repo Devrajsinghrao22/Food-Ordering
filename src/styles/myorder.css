@@ -6,6 +6,26 @@
     height: 100vh;
 }
 
+.button-box-my-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    gap: 10px;
+}
+
+.approve-order-btn{
+    padding: 4px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.cancel-order-btn{
+    padding: 4px;
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+
 .order-single-box {
     background-color: white;
     border-radius: 6px;
@@ -102,4 +122,23 @@
     margin-top: 20px;
     cursor: pointer;
     font-size: 15px;
+}
+
+.feedback-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px   21px;
+}
+
+.submit-feedback-btn{
+    width: 150px;
+    padding: 4px 1px;
+    border-radius: 4px;
+}
+
+.parent-feedback-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
 }

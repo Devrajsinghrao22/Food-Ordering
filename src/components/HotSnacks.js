@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/items.css";
 import Sidebar from "./Sidebar";
 
-const AddButton = ({ itemId, itemName, itemPrice, addToCart }) => {
+const AddButton = ({ itemId, itemName, itemPrice, itemType, addToCart }) => {
   const [count, setCount] = useState(() => {
     const storedCount = localStorage.getItem(`count_${itemId}`);
     return storedCount ? parseInt(storedCount) : 0;
@@ -12,14 +12,14 @@ const AddButton = ({ itemId, itemName, itemPrice, addToCart }) => {
   const handleAdd = () => {
     const newCount = count + 1;
     setCount(newCount);
-    addToCart(itemId, itemName, itemPrice);
+    addToCart(itemId, itemName, itemPrice, itemType);
     localStorage.setItem(`count_${itemId}`, newCount.toString());
   };
 
   const handleMinus = () => {
     const newCount = count > 1 ? count - 1 : 0;
     setCount(newCount);
-    addToCart(itemId, itemName, itemPrice, -1);
+    addToCart(itemId, itemName, itemPrice, itemType, -1);
     localStorage.setItem(`count_${itemId}`, newCount.toString());
   };
 
@@ -116,7 +116,7 @@ const HotSnacks = () => {
     };
   }, []);
 
-  const addToCart = (itemId, itemName, itemPrice, quantity = 1) => {
+  const addToCart = (itemId, itemName, itemPrice, itemType, quantity = 1) => {
     setCartItems((prevItems) => {
       const updatedItems = { ...prevItems };
       const existingItem = updatedItems[itemId];
@@ -130,6 +130,7 @@ const HotSnacks = () => {
           name: itemName,
           price: itemPrice,
           quantity: newQuantity,
+          type: itemType
         };
       }
 
@@ -146,7 +147,8 @@ const HotSnacks = () => {
       </div>
 
       <div>
-        <h2 className="item-page-heading">Today's Hot Snacks</h2>
+        {/* <h2 className="item-page-heading">Today's Hot Snacks</h2> */}
+        <h2 className="item-page-heading">Hot Snacks</h2>
         <div className="items-container">
           {hotsnacks.map((item) => (
             <div key={item.item_id} className="item">
@@ -159,6 +161,7 @@ const HotSnacks = () => {
                   itemId={item.item_id}
                   itemName={item.name}
                   itemPrice={item.price}
+                  itemType={item.type_for_item}
                   addToCart={addToCart}
                 />
               </div>
